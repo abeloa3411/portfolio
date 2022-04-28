@@ -1,5 +1,5 @@
 import React from "react";
-import articles from "../data";
+import projectData from "../Projects";
 import styled from "styled-components";
 
 const Card = styled.article`
@@ -29,7 +29,7 @@ const CardHeader = styled.div`
 const BlogPage = () => {
   return (
     <div>
-      {articles.map((item) => {
+      {projectData.map((item) => {
         const { id, title, img, description } = item;
         return (
           <a>

@@ -50,14 +50,6 @@ const Header = () => {
                 <NavItems>
                   <Link
                     style={{ textDecoration: "none", color: "#000" }}
-                    to="/tools"
-                  >
-                    Tools
-                  </Link>
-                </NavItems>
-                <NavItems>
-                  <Link
-                    style={{ textDecoration: "none", color: "#000" }}
                     to="/contacts"
                   >
                     Contacts

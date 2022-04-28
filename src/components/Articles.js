@@ -19,10 +19,10 @@ const ArticleP = styled.p``;
 
 const ArticlesCards = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   grid-gap: 16px;
   justify-content: center;
-  max-width: 1000px;
+  max-width: 700px;
   margin: 0 auto;
 `;
 const Card = styled.article`
@@ -32,6 +32,7 @@ const Card = styled.article`
 `;
 const CardImg = styled.img`
   width: 100%;
+  height: 200px;
 `;
 const CardDesc = styled.div`
   display: flex;
@@ -59,9 +60,14 @@ const Articles = () => {
         </ArticlesHeader>
         <ArticlesCards>
           {cards.map((card) => {
-            const { id, img, title, description } = card;
+            const { id, img, title, description, link } = card;
             return (
-              <a>
+              <a
+                href={link}
+                target="_blank"
+                rel="nowhere"
+                style={{ textDecoration: "none", color: "black" }}
+              >
                 <Card key={id}>
                   <CardImg src={img} />
                   <CardDesc>
