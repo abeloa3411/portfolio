@@ -17,6 +17,10 @@ const FooterCeneter = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 1rem 2rem;
+
+  @media screen and (max-width: 580px) {
+    grid-template-columns: 1fr;
+  }
 `;
 const FooterLeft = styled.div`
   display: flex;

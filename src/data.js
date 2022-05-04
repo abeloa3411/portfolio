@@ -13,6 +13,13 @@ export const articles = [
     img: require("./images/pic4.png"),
     link: "https://abelwanyonyi.hashnode.dev",
   },
+  {
+    id: 3,
+    title: "React Roadmap",
+    description: "React roadmap from a beginner level to an advanced level",
+    img: require("./images/pic4.png"),
+    link: "https://abelwanyonyi.hashnode.dev",
+  },
 ];
 
 export default articles;

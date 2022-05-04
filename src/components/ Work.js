@@ -10,7 +10,12 @@ const WorkContainer = styled.div`
   align-items: center;
   background: #f4f4f4;
 `;
-const WorkTitle = styled.h1``;
+const WorkTitle = styled.h1`
+  @media screen and (max-width: 768px) {
+    font-size: 28px;
+    text-align: center;
+  }
+`;
 const LinkContainer = styled.div`
   display: flex;
   justify-content: center;

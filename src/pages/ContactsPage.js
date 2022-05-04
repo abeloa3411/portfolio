@@ -20,6 +20,7 @@ const Title = styled.h3`
 `;
 const Paragraph = styled.p`
   margin-top: -10px;
+  padding: 0 1rem;
 `;
 const ContactsSocial = styled.div`
   display: flex;
@@ -73,7 +74,7 @@ const ContactsPage = () => {
           </a>
           <a
             style={{ color: "black" }}
-            href="https://github.com/abeloa3411"
+            href="https://instagram.com/dm_puppy"
             target="_blank"
             rel="nofollow"
           >

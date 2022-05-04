@@ -1,14 +1,39 @@
 import React from "react";
-import projectData from "../Projects";
+import data from "../data";
 import styled from "styled-components";
 
+const BlogContainer = styled.section`
+  width: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+`;
+const BlogCenter = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 16px;
+  width: 900px;
+  width: 100%;
+  margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 480px) {
+    grid-template-columns: 1fr;
+  }
+`;
 const Card = styled.article`
   min-height: 350px;
   border-radius: 6px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+
+  @media screen and (max-width: 480px) {
+    width: 340px;
+  }
 `;
 const CardImg = styled.img`
   width: 100%;
+  height: 200px;
 `;
 const CardDesc = styled.div`
   display: flex;
@@ -28,27 +53,36 @@ const CardHeader = styled.div`
 
 const BlogPage = () => {
   return (
-    <div>
-      {projectData.map((item) => {
-        const { id, title, img, description } = item;
-        return (
-          <a>
-            <Card key={id}>
-              <CardImg src={img} />
-              <CardDesc>
-                <CardHeader>
-                  <CardTitle>{title}</CardTitle>
-                  <CardP>{description}</CardP>
-                </CardHeader>
-                <CardDate>
-                  <span>{new Date().getFullYear()}</span>
-                </CardDate>
-              </CardDesc>
-            </Card>
-          </a>
-        );
-      })}
-    </div>
+    <BlogContainer>
+      <BlogCenter>
+        {data.map((item) => {
+          const { id, title, img, description } = item;
+          return (
+            <a
+              key={id}
+              style={{
+                display: "flex",
+                justifyContent: "center",
+                alignItems: "center",
+              }}
+            >
+              <Card>
+                <CardImg src={img} />
+                <CardDesc>
+                  <CardHeader>
+                    <CardTitle>{title}</CardTitle>
+                    <CardP>{description}</CardP>
+                  </CardHeader>
+                  <CardDate>
+                    <span>{new Date().getFullYear()}</span>
+                  </CardDate>
+                </CardDesc>
+              </Card>
+            </a>
+          );
+        })}
+      </BlogCenter>
+    </BlogContainer>
   );
 };
 

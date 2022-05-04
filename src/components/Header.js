@@ -11,7 +11,7 @@ const HeaderCenter = styled.div`
   align-items: center;
   height: 80px;
   padding: 0 2rem;
-  background: #f4f4f4;
+  background: #bfdef2;
 `;
 const Logo = styled.div``;
 const NavContainer = styled.div``;

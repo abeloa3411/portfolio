@@ -19,16 +19,27 @@ const ArticleP = styled.p``;
 
 const ArticlesCards = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   justify-content: center;
-  max-width: 700px;
+  align-items: center;
+  max-width: 900px;
   margin: 0 auto;
+
+  @media screen and (max-width: 768px) {
+    grid-template-columns: 1fr 1fr;
+  }
+  @media screen and (max-width: 580px) {
+    grid-template-columns: 1fr;
+  }
 `;
 const Card = styled.article`
   min-height: 350px;
   border-radius: 6px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  @media screen and (max-width: 480px) {
+    width: 340px;
+  }
 `;
 const CardImg = styled.img`
   width: 100%;
@@ -66,9 +77,16 @@ const Articles = () => {
                 href={link}
                 target="_blank"
                 rel="nowhere"
-                style={{ textDecoration: "none", color: "black" }}
+                style={{
+                  textDecoration: "none",
+                  color: "black",
+                  display: "flex",
+                  justifyContent: "center",
+                  alignItems: "center",
+                }}
+                key={id}
               >
-                <Card key={id}>
+                <Card>
                   <CardImg src={img} />
                   <CardDesc>
                     <CardHeader>

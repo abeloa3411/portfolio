@@ -18,6 +18,14 @@ const HeroTitle = styled.h1`
   background-image: linear-gradient(45deg, #ff0a78, #43f);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+  text-align: center;
+
+  @media screen and (max-width: 768px) {
+    font-size: 40px;
+  }
+  @media screen and (max-width: 480px) {
+    font-size: 28px;
+  }
 `;
 const ButtonContainer = styled.div`
   display: flex;
@@ -35,7 +43,9 @@ const Hero = () => {
   return (
     <HeroContainer>
       <HeroCenter>
-        <HeroTitle>Hey there i build beautiful and fast websites</HeroTitle>
+        <div style={{ padding: "0 .5rem" }}>
+          <HeroTitle>Hey there i build beautiful and fast websites</HeroTitle>
+        </div>
         <ButtonContainer>
           <Link to="/contacts">
             <Button>contact me</Button>
