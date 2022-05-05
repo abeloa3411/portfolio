@@ -2,7 +2,7 @@ import React from "react";
 import data from "../data";
 import styled from "styled-components";
 
-const BlogContainer = styled.section`
+const BlogContainer = styled.div`
   width: 100%;
   margin-top: 1rem;
   margin-bottom: 1rem;
@@ -11,7 +11,7 @@ const BlogCenter = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
-  width: 900px;
+  max-width: 900px;
   width: 100%;
   margin: 0 auto;
 
@@ -56,14 +56,17 @@ const BlogPage = () => {
     <BlogContainer>
       <BlogCenter>
         {data.map((item) => {
-          const { id, title, img, description } = item;
+          const { id, title, img, description, link } = item;
           return (
             <a
               key={id}
+              href={link}
               style={{
                 display: "flex",
                 justifyContent: "center",
                 alignItems: "center",
+                textDecoration: "none",
+                color: "black",
               }}
             >
               <Card>

@@ -32,7 +32,13 @@ const Work = () => {
     <WorkContainer>
       <WorkTitle>I'm a frontend developer</WorkTitle>
       <LinkContainer>
-        <LinkRoute href="#">read more about me</LinkRoute>
+        <LinkRoute
+          href="https://www.linkedin.com/in/abel-wanyonyi-4408b8201/"
+          target="_blank"
+          rel="nowhere"
+        >
+          read more about me
+        </LinkRoute>
         <AiOutlineArrowRight />
       </LinkContainer>
     </WorkContainer>

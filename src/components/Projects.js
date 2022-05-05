@@ -70,8 +70,8 @@ const Projects = () => {
         <ProjectsHeader>
           <ProjectsTitle>Latest Projects</ProjectsTitle>
           <ArticleP>
-            i have a lot of projects but i cant show all of them, Here are few
-            of the projects
+            i have a lot of projects but i cant show all of them,You can go to
+            my github and check Here are few of the projects
           </ArticleP>
         </ProjectsHeader>
         <ProjectsCards>

@@ -35,6 +35,7 @@ const ArticlesCards = styled.div`
 `;
 const Card = styled.article`
   min-height: 350px;
+  height: 100%;
   border-radius: 6px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
   @media screen and (max-width: 480px) {
