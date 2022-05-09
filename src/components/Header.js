@@ -1,17 +1,23 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
   width: 100%;
+  background: ${({ scrollNav }) => (scrollNav ? "#bfdef2" : "transparent")};
+  position: sticky;
+  height: 80px;
+  z-index: 10;
+  top: 0;
+  transition: all 0.3s ease-in-out;
+
 `;
 const HeaderCenter = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 80px;
   padding: 0 2rem;
-  background: #bfdef2;
+  height: 80px;
 `;
 const Logo = styled.div``;
 const NavContainer = styled.div``;
@@ -25,9 +31,22 @@ const NavItems = styled.li`
 `;
 
 const Header = () => {
+  const [scrollNav, setScrollNav] = useState(false);
+
+  const changeNav = () => {
+    if (window.scrollY >= 80) {
+      setScrollNav(true);
+    } else {
+      setScrollNav(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", changeNav);
+  }, []);
   return (
     <>
-      <HeaderContainer>
+      <HeaderContainer scrollNav={scrollNav}>
         <HeaderCenter>
           <Logo>
             <h3>
