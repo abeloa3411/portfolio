@@ -81,7 +81,7 @@ const Projects = () => {
               <a
                 href={link}
                 target="_blank"
-                rel="nowhere"
+                rel="noreferrer"
                 style={{
                   textDecoration: "none",
                   color: "black",

@@ -56,7 +56,7 @@ const ContactsPage = () => {
             style={{ color: "black" }}
             href="https://twitter.com/abel_wanyonyi_"
             target="_blank"
-            rel="nofollow"
+            rel="noreferrer"
           >
             <SocialIcon>
               <BsTwitter style={{ fontSize: "40px" }} />
@@ -66,7 +66,7 @@ const ContactsPage = () => {
             style={{ color: "black" }}
             href="https://linkedin.com/in/abel-wanyonyi-4408b8201"
             target="_blank"
-            rel="nofollow"
+            rel="noreferrer"
           >
             <SocialIcon>
               <BsLinkedin style={{ fontSize: "40px" }} />
@@ -76,7 +76,7 @@ const ContactsPage = () => {
             style={{ color: "black" }}
             href="https://instagram.com/dm_puppy"
             target="_blank"
-            rel="nofollow"
+            rel="noreferrer"
           >
             <SocialIcon>
               <BsInstagram style={{ fontSize: "40px" }} />
@@ -86,7 +86,7 @@ const ContactsPage = () => {
             style={{ color: "black" }}
             href="https://github.com/abeloa3411"
             target="_blank"
-            rel="nofollow"
+            rel="noreferrer"
           >
             <SocialIcon>
               <BsGithub style={{ fontSize: "40px" }} />
