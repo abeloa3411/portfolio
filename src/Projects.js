@@ -4,7 +4,7 @@ export const projectData = [
     title: "liqour-mart",
     description: "website for buying liqour with firebase",
     img: require("./images/pic2.png"),
-    link: "https://www.liqour-mart.web.app",
+    link: "liqour-mart.web.app",
   },
   {
     id: 2,

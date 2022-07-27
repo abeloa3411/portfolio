@@ -23,7 +23,7 @@ const ArticleP = styled.p`
 
 const ProjectsCards = styled.div`
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   justify-content: center;
   max-width: 700px;
