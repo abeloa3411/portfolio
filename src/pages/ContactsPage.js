@@ -44,7 +44,7 @@ const ContactsPage = () => {
     <ContactContainer>
       <ContactsCenter>
         <ContactTitle>
-          <Title>Contact</Title>
+          <Title>Contacts</Title>
           <Paragraph>
             The easiest way to find me is on twitter
             <BsTwitter style={{ color: "dodgerblue", fontSize: "25px" }} />, but

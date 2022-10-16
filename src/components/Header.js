@@ -10,7 +10,7 @@ const HeaderContainer = styled.div`
   z-index: 10;
   top: 0;
   transition: all 0.3s ease-in-out;
-
+  box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 `;
 const HeaderCenter = styled.div`
   display: flex;

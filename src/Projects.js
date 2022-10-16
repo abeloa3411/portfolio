@@ -4,7 +4,7 @@ export const projectData = [
     title: "liqour-mart",
     description: "website for buying liqour with firebase",
     img: require("./images/pic2.png"),
-    link: "liqour-mart.web.app",
+    link: "https://liqour-mart.web.app",
   },
   {
     id: 2,
@@ -15,6 +15,13 @@ export const projectData = [
   },
   {
     id: 3,
+    title: "sokomoto",
+    description: "web app which allows designers to showcase the designs",
+    img: require("./images/pic5.png"),
+    link: "https://exercise-tracker-simple.herokuapp.com",
+  },
+  {
+    id: 4,
     title: "exercise tracker mern",
     description: "website for keeping track of your workouts",
     img: require("./images/pic5.png"),
