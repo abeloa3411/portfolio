@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import cards from "../data";
+import { articles } from "../data";
 
 const ArticlesContainer = styled.div`
   width: 100%;
@@ -71,7 +71,7 @@ const Articles = () => {
           <ArticleP>i write articles on web development and ui/ux</ArticleP>
         </ArticlesHeader>
         <ArticlesCards>
-          {cards.map((card) => {
+          {articles.map((card) => {
             const { id, img, title, description, link } = card;
             return (
               <a

@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import projectData from "../Projects";
+import { projectData } from "../data";
 
 const ProjectsContainer = styled.div`
   width: 100%;
