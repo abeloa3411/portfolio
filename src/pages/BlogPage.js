@@ -5,7 +5,7 @@ import styled from "styled-components";
 const BlogContainer = styled.div`
   width: 100%;
   margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-bottom: 4rem;
 `;
 const BlogCenter = styled.div`
   display: grid;
@@ -70,7 +70,7 @@ const BlogPage = () => {
               }}
             >
               <Card>
-                <CardImg src={img} />
+                <CardImg src={img} alt={title} />
                 <CardDesc>
                   <CardHeader>
                     <CardTitle>{title}</CardTitle>

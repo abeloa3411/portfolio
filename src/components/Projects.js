@@ -26,7 +26,7 @@ const ProjectsCards = styled.div`
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 16px;
   justify-content: center;
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 1rem 0 0;
 
@@ -35,9 +35,12 @@ const ProjectsCards = styled.div`
   }
 `;
 const Card = styled.article`
-  min-height: 350px;
+  max-width: 300px;
+  height: 400px;
   border-radius: 6px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
+  transition: all 0.3s ease-in-out;
 
   @media screen and (max-width: 480px) {
     width: 340px;
@@ -58,6 +61,9 @@ const CardTitle = styled.h4``;
 const CardP = styled.p``;
 const CardDate = styled.div`
   width: 100%;
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
 `;
 const CardHeader = styled.div`
   width: 100%;
@@ -92,7 +98,7 @@ const Projects = () => {
                 key={id}
               >
                 <Card>
-                  <CardImg src={img} />
+                  <CardImg src={img} alt={title} />
                   <CardDesc>
                     <CardHeader>
                       <CardTitle>{title}</CardTitle>

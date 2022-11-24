@@ -12,6 +12,10 @@ const HeroCenter = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+
+  @media screen and (max-width: 580px) {
+    height: 90vh;
+  }
 `;
 const HeroTitle = styled.h1`
   font-size: 50px;

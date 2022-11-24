@@ -23,7 +23,7 @@ const ArticlesCards = styled.div`
   grid-gap: 16px;
   justify-content: center;
   align-items: center;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 0 auto;
 
   @media screen and (max-width: 768px) {
@@ -34,29 +34,33 @@ const ArticlesCards = styled.div`
   }
 `;
 const Card = styled.article`
-  min-height: 350px;
-  height: 100%;
+  max-width: 300px;
+  height: 400px;
   border-radius: 6px;
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2);
+  position: relative;
   @media screen and (max-width: 480px) {
     width: 340px;
   }
 `;
 const CardImg = styled.img`
   width: 100%;
-  height: 200px;
+  height: 240px;
 `;
 const CardDesc = styled.div`
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: center;
-  padding: 0.5rem 1rem;
+  padding: 0.5rem;
 `;
 const CardTitle = styled.h4``;
 const CardP = styled.p``;
 const CardDate = styled.div`
   width: 100%;
+  position: absolute;
+  bottom: 2%;
+  left: 5%;
 `;
 const CardHeader = styled.div`
   width: 100%;
@@ -88,7 +92,7 @@ const Articles = () => {
                 key={id}
               >
                 <Card>
-                  <CardImg src={img} />
+                  <CardImg src={img} alt={title} />
                   <CardDesc>
                     <CardHeader>
                       <CardTitle>{title}</CardTitle>
